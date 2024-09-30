@@ -11,7 +11,9 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>Laravel comics</h1>
+            @foreach ($comics as $comic)
+                
+            @endforeach
         </div>    
     </div>    
 </div>  
