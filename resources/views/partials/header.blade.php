@@ -4,7 +4,7 @@
             <div class="col-12">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo">
-                        <img src=" {{ vite::asset('resources/img/dc-logo.png') }}" alt="comics">
+                        <img src=" {{ Vite::asset('resources/img/dc-logo.png') }}" alt="comics">
                     </div>
                     <div class="menu">
                         <ul class="list-unstyled d-flex m-0">
@@ -19,6 +19,9 @@
                             <li class="nav-item px-3 py-5"><a class="nav-link" href="">News</a></li>
                             <li class="nav-item px-3 py-5"><a class="nav-link" href="">Shop</a></li>
                         </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search &#128269;">
                     </div>
                 </div>
             </div>
