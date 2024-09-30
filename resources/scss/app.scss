@@ -1,3 +1,17 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import '@fortawesome/fontawesome-free/css/all.css';
+
+.logo{
+    img{
+        width: 100px;
+    }
+}
+.search{
+    input{
+        border: none;
+    }
+}
+#jumbotron{
+    background-image: url('../img/jumbotron.jpg');
+}
