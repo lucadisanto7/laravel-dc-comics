@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
-                <img src="{{ $comic['thumb'] }}" alt="{{$comic['title']}}">
+                <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{$comic['title']}}">
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <h1>{{$comic['title']}}</h1>
