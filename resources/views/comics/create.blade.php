@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <form action="{{ route('comics.store')}}" method="post">
+                <form action="{{ route('comics.store')}}" method="POST">
                 @csrf
                 <div class="row gy-3">
                     <div class="col-12 col-md-6 col-lg-4">
@@ -43,8 +43,8 @@
                         <label for="" class="control-label">Writers</label>
                         <textarea type="text" name="writers" id="" class="form-control" placeholder="Writers"></textarea>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-100" >
-                        <button type="submit" class="btn btn-sm btn-success"></button>
+                    <div class="col-12 col-md-6 col-lg-4" >
+                        <button type="submit" class="btn btn-sm btn-success">Create a comic</button>
                     </div>
                 </div>
                 </form>
