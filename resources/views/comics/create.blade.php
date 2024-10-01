@@ -43,11 +43,11 @@
                         <label for="" class="control-label">Writers</label>
                         <textarea type="text" name="writers" id="" class="form-control" placeholder="Writers"></textarea>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-md-6 col-lg-4 mt-100" >
                         <button type="submit" class="btn btn-sm btn-success"></button>
                     </div>
                 </div>
-            </form>
+                </form>
             </div>
         </div>
     </div>
