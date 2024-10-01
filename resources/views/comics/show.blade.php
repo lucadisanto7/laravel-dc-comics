@@ -12,6 +12,8 @@
                 <p>{{ $comic['description'] }}</p>
                 <h4><strong>{{$comic['price']}}</strong></h4>
                 <p>{{$comic['sale_date']}}</p>
+                <p><strong>Artists:</strong> {{$comic['artists']}}</p>
+                <p><strong>Writers:</strong> {{$comic['writers']}}</p>
             </div>
         </div>
     </div>
