@@ -7,7 +7,11 @@
                 <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{$comic['title']}}">
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <h1>{{$comic['title']}}</h1>
+                <div class="d-flex">
+                    <h1>{{$comic['title']}}</h1>
+                </div>
+                <a href="{{route('comics.edit', ['comic' => $comic->id])}}" class="btn btn-sm btn-warning"></a>
+                <a href="" class="fas fa-edit"></a>
                 <h3>{{$comic['series']}}</h3>
                 <p><sub>{{$comic['type']}}</sub></p>
                 <p>{{ $comic['description'] }}</p>
