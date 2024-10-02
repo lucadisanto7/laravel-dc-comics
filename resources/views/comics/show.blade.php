@@ -13,8 +13,8 @@
                 <a href="{{route('comics.edit', ['comic' => $comic->id])}}" class="btn btn-sm btn-warning">Modifica</a>
                 <form action="{{ route('comics.destroy', ['comic' => $comic->id])}}" method="POST"></form>
                 @csrf
-                @method('DES')
-                <button type="submit" class="btn btn-sm btn-danger">Cancella</button>
+                @method('DELETE')
+                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Sei sicuro di voler cancellare?')">Cancella</button>
                 <h3>{{$comic['series']}}</h3>
                 <p><sub>{{$comic['type']}}</sub></p>
                 <p>{{ $comic['description'] }}</p>
