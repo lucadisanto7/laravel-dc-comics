@@ -41,6 +41,16 @@ class ComicController extends Controller
             'price' => 'required|max:10',
             'sale_date' => 'required|date',
             'type' => 'required|max:255',
+        ], [
+            'title.required' => 'Inserisci il titolo',
+            'title.max' => 'Il titolo puo essere lungo al massimo :max',
+            'thumb.max' => 'Il link puo essere lungo al massimo :max',
+            'price.required' => 'Inserisci il prezzo',
+            'price.max' => 'Il prezzo puo essere lungo al massimo :max',
+            'sale_date.required' => 'Inserisci la data',
+            'sale_date.max' => 'la data deve essere espressa in un formato valido',
+            'type.required' => 'Inserisci il tipo',
+            'type.max' => 'Il tipo puo essere lungo al massimo :max',
         ]);
         $forma_data = $request->all();
         $new_comic = new Comic();
