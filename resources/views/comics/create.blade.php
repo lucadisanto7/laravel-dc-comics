@@ -18,31 +18,31 @@
                 <div class="row gy-3">
                     <div class="col-12 col-md-6 col-lg-4">
                         <label for="" class="control-label">Title</label>
-                        <input type="text" name="title" id="" class="form-control" placeholder="title">
+                        <input type="text" name="title" id="" class="form-control" placeholder="title" value="{{ old('title')}}">
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <label for="" class="control-label">Image</label>
-                        <input type="text" name="image" id="" class="form-control" placeholder="img">
+                        <input type="text" name="image" id="" class="form-control" placeholder="img" value="{{ old('thumb')}}">
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <label for="" class="control-label">Series</label>
-                        <input type="text" name="Series" id="" class="form-control" placeholder="Series">
+                        <input type="text" name="Series" id="" class="form-control" placeholder="Series" value="{{ old('series')}}">
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <label for="" class="control-label">Price</label>
-                        <input type="text" name="price" id="" class="form-control" placeholder="Price">
+                        <input type="text" name="price" id="" class="form-control" placeholder="Price" value="{{ old('price')}}">
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <label for="" class="control-label">Date</label>
-                        <input type="text" name="date" id="" class="form-control" placeholder="date">
+                        <input type="text" name="date" id="" class="form-control" placeholder="date" value="{{ old('sale_date')}}">
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <label for="" class="control-label">Type</label>
-                        <input type="text" name="type" id="" class="form-control" placeholder="Type">
+                        <input type="text" name="type" id="" class="form-control" placeholder="Type" value="{{ old('type')}}">
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <label for="" class="control-label">Description</label>
-                        <textarea type="text" name="title" id="" class="form-control" placeholder="description"></textarea>
+                        <textarea type="text" name="title" id="" class="form-control" placeholder="description" value="{{ old('description')}}"></textarea>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <label for="" class="control-label">Artists</label>
