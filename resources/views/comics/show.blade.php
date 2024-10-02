@@ -10,8 +10,11 @@
                 <div class="d-flex">
                     <h1>{{$comic['title']}}</h1>
                 </div>
-                <a href="{{route('comics.edit', ['comic' => $comic->id])}}" class="btn btn-sm btn-warning"></a>
+                <a href="{{route('comics.edit', ['comic' => $comic->id])}}" class="btn btn-sm btn-warning">modifica</a>
                 <a href="" class="fas fa-edit"></a>
+                <form action="{{ route('comics.destroy', ['comic' => $comic->id])}}" method="POST"></form>
+                @csrf
+                @method('DES')
                 <h3>{{$comic['series']}}</h3>
                 <p><sub>{{$comic['type']}}</sub></p>
                 <p>{{ $comic['description'] }}</p>
